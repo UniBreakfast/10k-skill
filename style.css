@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  background: #311212;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  margin: auto;
+  height: 80%;
+  width: 70%;
+  background: cornsilk;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+#timePool {
+  margin: auto;
+  width: 80%;
+  height: 25px;
+  background: wheat;
+  border: 1px solid;
+
+}
+
+#investList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#investList li {
+  border: 1px solid;
+  width: 80%;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 4px 9px;
+}
+
+#btns {
+  text-align: center;
+}
