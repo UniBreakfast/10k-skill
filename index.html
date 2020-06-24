@@ -10,10 +10,20 @@
 </head>
 <body>
   <main id="main">
-    <div id="timePool"></div>
+    <div id="timePool">
+      <div class="poolUsed" data-skill="some_id" style="--portion:20%"></div>
+      <div id="poolLeft"></div>
+    </div>
+    <div id="poolMins">
+      <span id="minsUsed">5</span>
+      <span id="minsToUse" contenteditable>15</span>
+      <span id="minsLeft"></span>
+    </div>
     <ul id="investList">
       <li data-bar="30">
-        <span>Сон</span> <span>300</span>
+        <span class="name">Сон</span>
+        <span class="mins">300</span>
+        <div class="bar"></div>
       </li>
       <li>Программирование</li>
       <li>Ютуб</li>
@@ -21,7 +31,7 @@
       <li>Зарядка</li>
     </ul>
     <div id="btns">
-      <button>Добавить вклад</button><button>Принять отчёт</button>
+      <button>Добавить вклад</button><button id="reportBtn">Принять отчёт</button>
     </div>
   </main>
 </body>

@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body, button, input, textarea {
+  font: 20px Trebuchet MS, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -22,11 +30,28 @@ ul {
 
 #timePool {
   margin: auto;
+  display: flex;
   width: 80%;
   height: 25px;
   background: wheat;
   border: 1px solid;
+}
 
+.poolUsed {
+  background: pink;
+  width: var(--portion);
+}
+
+#poolLeft {
+  background: yellowgreen;
+  flex: 1;
+}
+
+#poolMins {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
 }
 
 #investList {
@@ -42,8 +67,28 @@ ul {
   border-radius: 5px;
   margin: 3px;
   padding: 4px 9px;
+  background: white;
 }
 
 #btns {
   text-align: center;
+}
+
+#investList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#investList .name {
+  margin-left: 10px;
+}
+
+.bar {
+  width: 40px;
+  height: 40px;
+  background: teal;
 }
