@@ -1,4 +1,4 @@
-# 10k-skill
+# [10k-skill](https://github.com/UniBreakfast/10k-skill)
 
 ## Basic UI prototyping for a time tracker app
 
